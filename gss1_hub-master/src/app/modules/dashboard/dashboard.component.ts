@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import {
   IconDefinition,
   faDesktop,
@@ -11,12 +11,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { Employee } from 'src/app/interfaces/employee.interface';
 import { UpcomingWorkAnniversary } from 'src/app/utils/employee-constant';
-
-interface CenterMenuItem {
-  label: string;
-  icon: IconDefinition;
-}
-
+import { CenterMenuItem, FacilitiesMenuItems, FinanceMenuItems, GovernanceMenuItems, HRMenuItems, ITMenuItems, LeftMenuItem, LeftMenuItems, MigrationMenuItems, QualityMenuItems } from 'src/app/utils/menu-iteams';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -29,117 +24,44 @@ export class DashboardComponent implements OnInit {
   handHoldingHeart = faHandHoldingHeart;
   star = faStar;
   desktop = faDesktop;
+  centerMenu: CenterMenuItem[] =[];
+  leftMenu: LeftMenuItem[] =[];
 
-  constructor(private router: Router) {}
-
-  leftMenu = [
-    {
-      icon: this.envelopeOpen,
-      active: false,
-      label: 'Facilities',
-    },
-    {
-      icon: this.desktop,
-      active: false,
-      label: 'Finance',
-    },
-    {
-      icon: this.handHoldingHeart,
-      active: false,
-      label: 'Governance',
-    },
-    {
-      icon: this.userGroup,
-      active: true,
-      label: 'HR',
-    },
-    {
-      icon: this.layerGroup,
-      active: false,
-      label: 'IT',
-    },
-    {
-      icon: this.star,
-      active: false,
-      label: 'Favorite',
-    },
-  ];
-
-  centerMenu: CenterMenuItem[] = [
-    {
-      icon: this.envelopeOpen,
-      label: 'Employee Management',
-    },
-    {
-      icon: this.desktop,
-      label: 'Separation Module',
-    },
-    {
-      icon: this.handHoldingHeart,
-      label: 'Training',
-    },
-    {
-      icon: this.userGroup,
-      label: 'IJP',
-    },
-    {
-      icon: this.layerGroup,
-      label: 'P4P',
-    },
-    {
-      icon: this.star,
-      label: 'Your Journey',
-    },
-    {
-      icon: this.desktop,
-      label: 'I Resolve',
-    },
-    {
-      icon: this.handHoldingHeart,
-      label: 'HR- Employee Letters',
-    },
-    {
-      icon: this.userGroup,
-      label: 'Employee Certificates',
-    },
-    {
-      icon: this.layerGroup,
-      label: 'Employee Benefits',
-    },
-    {
-      icon: this.star,
-      label: 'Leave & Attendance',
-    },
-    {
-      icon: this.star,
-      label: 'Personal Information',
-    },
-    {
-      icon: this.star,
-      label: 'Question Marks',
-    },
-    {
-      icon: this.star,
-      label: 'One People Place',
-    },
-    {
-      icon: this.star,
-      label: 'Center Stage',
-    },
-    {
-      icon: this.star,
-      label: 'Ascent HR',
-    },
-  ];
+  constructor(private router: Router,private route: ActivatedRoute) {}
 
   upcomingWorkAnniversary: Employee[] = UpcomingWorkAnniversary;
-
   ngOnInit(): void {
     this.upcomingWorkAnniversary = this.upcomingWorkAnniversary.slice(0, 4);
+    this.centerMenu=HRMenuItems;
+    this.leftMenu=LeftMenuItems;
   }
 
-  handleClick(menuItem: CenterMenuItem) {
-    if (menuItem.label === 'Your Journey')
+  handleClickCenter(menuItem: CenterMenuItem) {
+    if (menuItem.label === 'Your Journey') {
       this.router.navigateByUrl('/your-journey');
+    }
+}
+handleClickLeft(menuItem: CenterMenuItem) {
+  if(menuItem.label ==='HR'){
+    this.centerMenu=HRMenuItems;
   }
+  if(menuItem.label ==='QUALITY'){
+    this.centerMenu=QualityMenuItems;
+  }
+  if(menuItem.label ==='Facilities'){
+    this.centerMenu=FacilitiesMenuItems;
+  }
+  if(menuItem.label ==='Finance'){
+    this.centerMenu=FinanceMenuItems;
+  }
+  if(menuItem.label ==='Governance'){
+    this.centerMenu=GovernanceMenuItems;
+  }
+  if(menuItem.label ==='IT'){
+    this.centerMenu=ITMenuItems;
+  }
+  if(menuItem.label ==='Migrations'){
+    this.centerMenu=MigrationMenuItems;
+  }
+}
 }

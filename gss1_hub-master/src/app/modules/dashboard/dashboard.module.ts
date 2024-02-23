@@ -14,5 +14,6 @@ import { RouterModule } from '@angular/router';
     ProfileCardComponent,
   ],
   imports: [CommonModule, FontAwesomeModule, ReactiveFormsModule, RouterModule],
+  exports: [DashboardComponent],
 })
 export class DashboardModule {}

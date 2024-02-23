@@ -1,15 +1,15 @@
 <div class="container">
    <div class="left">
-    <div class="menu-item" [ngClass]="menuItem.active ? 'active' : ''" *ngFor="let menuItem of leftMenu">
+    <div class="menu-item" (click)="handleClickLeft(menuItem)" [ngClass]="menuItem.active ? 'active' : ''" *ngFor="let menuItem of leftMenu">
        <fa-icon [icon]="menuItem.icon" size="xl" ></fa-icon>
-      <p>{{menuItem.label}}</p>
+       <p>{{menuItem.label}}</p>
     </div>
    </div>
    <div class="center">
     <div style="display: flex;flex-wrap: wrap;">
-        <div class="item"  (click)="handleClick(menuItem)"  *ngFor="let menuItem of centerMenu">
+        <div class="item"  (click)="handleClickCenter(menuItem)"  *ngFor="let menuItem of centerMenu">
            <fa-icon [icon]="menuItem.icon" size="xl" ></fa-icon>
-          <p>{{menuItem.label}}</p>
+           <p>{{menuItem.label}}</p>
         </div>
     </div>
    </div>
