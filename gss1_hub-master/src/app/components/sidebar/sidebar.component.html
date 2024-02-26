@@ -2,7 +2,7 @@
   <div class="top" (click)="toggle()">
     <fa-icon [icon]="faGrip" size="2xl"></fa-icon>
   </div>
-  <div [ngClass]="isVisible ? 'show' : 'hide'">
+  <div [ngClass]="!isVisible ? 'show' : 'hide'">
     <div class="menu-item">
       <fa-icon [icon]="faGlobe" size="2xl"></fa-icon>
       <p>Internet</p>

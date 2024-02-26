@@ -32,7 +32,8 @@ export class DashboardComponent implements OnInit {
   upcomingWorkAnniversary: Employee[] = UpcomingWorkAnniversary;
   ngOnInit(): void {
     this.upcomingWorkAnniversary = this.upcomingWorkAnniversary.slice(0, 4);
-    this.centerMenu=HRMenuItems;
+    // this.centerMenu=HRMenuItems;
+    this.centerMenu=FacilitiesMenuItems;
     this.leftMenu=LeftMenuItems;
   }
 
@@ -42,14 +43,15 @@ export class DashboardComponent implements OnInit {
     }
 }
 handleClickLeft(menuItem: CenterMenuItem) {
+  
+  if(menuItem.label ==='Facilities'){
+    this.centerMenu=FacilitiesMenuItems;
+  }
   if(menuItem.label ==='HR'){
     this.centerMenu=HRMenuItems;
   }
   if(menuItem.label ==='QUALITY'){
     this.centerMenu=QualityMenuItems;
-  }
-  if(menuItem.label ==='Facilities'){
-    this.centerMenu=FacilitiesMenuItems;
   }
   if(menuItem.label ==='Finance'){
     this.centerMenu=FinanceMenuItems;
