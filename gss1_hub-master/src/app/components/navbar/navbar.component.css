@@ -1,12 +1,13 @@
 /* Add a black background color to the top navigation */
 .topnav {
     position: relative;
-    background-color: #f1f1f1;
+    background-color: white;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 7vh;
+    height: 12vh;
+    margin-top: 5px;
 }
 
 /* Style the links inside the navigation bar */
