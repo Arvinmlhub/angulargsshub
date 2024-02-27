@@ -4,6 +4,7 @@ import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { YourJourneyComponent } from './modules/dashboard/your-journey/your-journey.component';
 import { QualityComponent } from './modules/quality/quality.component';
 import { P4PComponent } from './components/p4-p/p4-p.component';
+import { PfpPaidDetailComponent } from './components/pfp-paid-detail/pfp-paid-detail.component';
 
 const routes: Routes = [
   {
@@ -21,7 +22,11 @@ const routes: Routes = [
   {
     path: 'hr/p4p',
     component: P4PComponent
-  }
+  },
+  {
+    path: 'hr/p4p/paid-details',
+    component: PfpPaidDetailComponent
+  },
 ];
 
 @NgModule({
