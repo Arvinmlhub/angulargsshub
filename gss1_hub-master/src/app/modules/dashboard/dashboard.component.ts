@@ -41,6 +41,9 @@ export class DashboardComponent implements OnInit {
     if (menuItem.label === 'Your Journey') {
       this.router.navigateByUrl('/your-journey');
     }
+    if (menuItem.label === 'P4P') {
+      this.router.navigateByUrl('/hr/p4p');
+    }
 }
 handleClickLeft(menuItem: CenterMenuItem) {
   

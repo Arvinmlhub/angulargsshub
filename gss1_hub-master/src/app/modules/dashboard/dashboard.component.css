@@ -67,7 +67,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(249, 249, 249);
+    box-shadow: 0 -1px 0 0.3px #a4ce4e, 0 1px 0 0.3px #008fd9;
+    background: #edf8ff;
     border: 1px solid rgb(159, 159, 159);
     margin: 5px;
     border-radius: 10px;

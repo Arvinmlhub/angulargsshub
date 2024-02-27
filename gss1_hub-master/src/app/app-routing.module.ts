@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { YourJourneyComponent } from './modules/dashboard/your-journey/your-journey.component';
 import { QualityComponent } from './modules/quality/quality.component';
+import { P4PComponent } from './components/p4-p/p4-p.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'quality',
     component: QualityComponent,
+  },
+  {
+    path: 'hr/p4p',
+    component: P4PComponent
   }
 ];
 

@@ -208,3 +208,22 @@ export const MigrationMenuItems: CenterMenuItem[] = [
     label: 'EDS',
   }
 ];
+
+export const P4PMenuItems: CenterMenuItem[] = [
+  {
+    icon: faEnvelopeOpen,
+    label: 'View P4P Paid Details',
+  },
+  {
+    icon: faEnvelopeOpen,
+    label: 'P4P Query Resolution',
+  },
+  {
+    icon: faEnvelopeOpen,
+    label: 'Applicable P4P Scorecard',
+  },
+  {
+    icon: faEnvelopeOpen,
+    label: 'Employee rating',
+  }
+];
