@@ -1,8 +1,13 @@
-<div class="center">
-    <div style="display: flex;flex-wrap: wrap;">
-        <div class="item"  (click)="handleClickCenter(menuItem)"  *ngFor="let menuItem of centerMenu">
-           <fa-icon [icon]="menuItem.icon" size="xl" ></fa-icon>
-           <p>{{menuItem.label}}</p>
+
+    <div class="center">
+        <div style="display: flex;flex-wrap: wrap;">
+            <div class="item"  
+            (click)="handleClickCenter(menuItem)" 
+             *ngFor="let menuItem of centerMenu">
+               <fa-icon [icon]="menuItem.icon" size="xl" ></fa-icon>
+               <a routerLink="/pfpPaidDetail">
+               <p>{{menuItem.label}}</p>
+            </a>
+            </div>
         </div>
-    </div>
-   </div>
+       </div>

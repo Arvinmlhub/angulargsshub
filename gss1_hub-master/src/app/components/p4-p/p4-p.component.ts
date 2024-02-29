@@ -17,8 +17,7 @@ export class P4PComponent {
   }
 
   handleClickCenter(menuItem: CenterMenuItem) {
-    if (menuItem.label === 'View P4P Paid Details') {
-      this.router.navigateByUrl('/hr/p4p/paid-details');
-    }
+    this.router.navigate(['/pfpPaidDetail']);
+   
   }
 }

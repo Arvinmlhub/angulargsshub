@@ -23,10 +23,9 @@ const routes: Routes = [
     path: 'hr/p4p',
     component: P4PComponent
   },
-  {
-    path: 'hr/p4p/paid-details',
-    component: PfpPaidDetailComponent
-  },
+
+  { path: 'pfpPaidDetail',
+   component: PfpPaidDetailComponent },
 ];
 
 @NgModule({
