@@ -11,10 +11,11 @@ import { QualityComponent } from './modules/quality/quality.component';
 import { P4PComponent } from './components/p4-p/p4-p.component';
 import { Routes } from '@angular/router';
 import { PfpPaidDetailComponent } from './components/pfp-paid-detail/pfp-paid-detail.component';
+import { EmpRatingComponent } from './emp-rating/emp-rating.component';
 
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, SidebarComponent, QualityComponent,P4PComponent],
+  declarations: [AppComponent, NavbarComponent, SidebarComponent, QualityComponent,P4PComponent, EmpRatingComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

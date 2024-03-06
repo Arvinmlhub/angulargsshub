@@ -1,11 +1,14 @@
 
-    <div class="center">
-        <div style="display: flex;flex-wrap: wrap;">
+    <div class="main-panel" style="display: flex;">
+        <!-- <div >My Modules</div> -->
+        <div class="white-panel" style="height:150px; flex: 1; 
+        ">
+            
             <div class="item"  
             (click)="handleClickCenter(menuItem)" 
              *ngFor="let menuItem of centerMenu">
                <fa-icon [icon]="menuItem.icon" size="xl" ></fa-icon>
-               <a routerLink="/pfpPaidDetail">
+               <a style="text-decoration: none;" routerLink="/pfpPaidDetail">
                <p>{{menuItem.label}}</p>
             </a>
             </div>

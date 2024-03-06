@@ -2,15 +2,14 @@
     background-color: rgb(242, 249, 255);
 } */
 
-.container {
+/* .container {
     height: 84vh;
     display: flex;
-    /* background-color: rgb(242, 249, 255); */
-    background-color: #ecf6fd;
+    background-color: #ecf6fa;
     padding: 1rem ;
-    border-radius: 20px;
+    border-radius: 40px;
     
-}
+} */
 
 .left {
     /* flex: 1.5; */
@@ -130,7 +129,7 @@
 }
 
 .item:hover {
-    background-color: #ecf6fd;
+    background-color: #ecf6fa;
     color: rgba(2, 2, 10, 0.877);
     
     border-block-color: inherit;

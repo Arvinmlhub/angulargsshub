@@ -8,7 +8,23 @@ body{
     color: #333;
 }
 
+.main-panel{
+    height: 84vh;
+    display: flex;
+    /* background-color: rgb(242, 249, 255); */
+    background-color: #ecf6fa;
+    padding: 1rem ;
+    border-radius: 40px;
+    position: relative;
+    overflow: visible;
+}
 
+.white-panel{
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
 /* styles.css */
 
 
