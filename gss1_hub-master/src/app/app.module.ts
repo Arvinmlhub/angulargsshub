@@ -15,12 +15,13 @@ import { EmpRatingComponent } from './emp-rating/emp-rating.component';
 
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, SidebarComponent, QualityComponent,P4PComponent, EmpRatingComponent],
+  declarations: [AppComponent, NavbarComponent, SidebarComponent,  EmpRatingComponent,QualityComponent,P4PComponent, EmpRatingComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     DashboardModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent],
