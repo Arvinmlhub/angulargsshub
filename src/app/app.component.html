@@ -1,0 +1,26 @@
+<div class="wrapper" style="background-color: aliceblue;">
+  <div class="left-sidebar"  style="width: 35px;background-color: white;">
+    <app-sidebar (toggleSidebar)="handleSidebarToggle($event)"></app-sidebar>
+  </div>
+  <div class="main-area">
+    <app-navbar (showUserInfo)="showUserInfoDropdown($event)"></app-navbar>
+    <div *ngIf="showUserDropdown" class="dropdown-content">
+        <div
+          class="profile-img"
+          [style.background-image]="'url(./../../../assets/suraj.jpg)'"
+        ></div>
+        <h2>Arvind Verma</h2>
+        <span>Edit Profile</span><fa-icon [icon]="faEdit" ></fa-icon>
+        <h3>My Options</h3>
+        <div class="myOptions" >
+          <p>Designation</p>
+          <p>Sitemap</p> 
+          <p>Position: Specialist</p>
+          <p>Age : 24</p>
+        </div>
+      <button>Sign out</button>
+    </div>
+    
+    <router-outlet></router-outlet>
+  </div>
+</div>
