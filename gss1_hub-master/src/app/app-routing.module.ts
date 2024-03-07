@@ -5,6 +5,7 @@ import { YourJourneyComponent } from './modules/dashboard/your-journey/your-jour
 import { QualityComponent } from './modules/quality/quality.component';
 import { P4PComponent } from './components/p4-p/p4-p.component';
 import { PfpPaidDetailComponent } from './components/pfp-paid-detail/pfp-paid-detail.component';
+import { EmpRatingComponent } from './emp-rating/emp-rating.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,8 @@ const routes: Routes = [
 
   { path: 'pfpPaidDetail',
    component: PfpPaidDetailComponent },
+   { path: 'empRating',
+   component: EmpRatingComponent },
 ];
 
 @NgModule({

@@ -17,7 +17,12 @@ export class P4PComponent {
   }
 
   handleClickCenter(menuItem: CenterMenuItem) {
+    console.log('handleClickCenter',menuItem);
+    if(menuItem.label==="Employee rating"){
+      this.router.navigateByUrl("/empRating");
+    } if(menuItem.label==="View P4P Paid Details"){
     this.router.navigate(['/pfpPaidDetail']);
+  }
    
   }
 }
