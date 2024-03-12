@@ -224,6 +224,6 @@ export const P4PMenuItems: CenterMenuItem[] = [
   },
   {
     icon: faEnvelopeOpen,
-    label: 'Employee rating',
+    label: 'Employee Rating',
   }
 ];

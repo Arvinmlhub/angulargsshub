@@ -1,6 +1,6 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 350px;
+    width: 350px;
     margin: auto;
     text-align: center;
     position: relative;
@@ -21,7 +21,7 @@
 .profile-img {
     position: absolute;
     top: 25%;
-    left: 25%;
+    left: 33%;
     background-color: rgb(17, 71, 16);
     height: 120px;
     width: 120px;
