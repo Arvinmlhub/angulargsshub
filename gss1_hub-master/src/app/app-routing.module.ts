@@ -27,8 +27,13 @@ const routes: Routes = [
 
   { path: 'pfpPaidDetail',
    component: PfpPaidDetailComponent },
+   
    { path: 'empRating',
    component: EmpRatingComponent },
+
+      
+   { path: '**',
+   component: DashboardComponent },
 ];
 
 @NgModule({

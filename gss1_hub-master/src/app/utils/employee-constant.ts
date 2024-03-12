@@ -12,8 +12,8 @@ export const UpcomingWorkAnniversary: Employee[] = [
     firstName: 'Subu',
     lastName: '',
     profileImg: './../../../assets/avatar.png',
-    years: 0,
-    title:'Tranner',
+    years: 1,
+    title:'Training Consultant',
   },
   {
     firstName: 'Vineet',
