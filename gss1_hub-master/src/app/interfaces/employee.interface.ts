@@ -3,4 +3,5 @@ export interface Employee {
   lastName: string;
   years: number;
   profileImg: string;
+  title:string
 }
