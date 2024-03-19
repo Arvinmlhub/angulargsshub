@@ -368,103 +368,52 @@
                               </tr>
                             </thead>
                             <tbody>
-                              <tr class="table-layout-header">
 
-                                <td>
-                                  <div>
-                                    <span> Feb-2024 </span>
-                                  </div>
-                                </td>
+                                  <tr  *ngFor="let details of viewDetailsGrid" class="table-layout-header">
+                                        
+                                  <td>
+                                    <div>
+                                      <span>  {{details.year}} </span>
+                                    </div>
+                                  </td>
 
+                                  <td>
+                                    <div>
+                                      <span>  {{details.process}} </span>
+                                    </div>
+                                  </td>
 
-                                <td>
-                                  <div>
-                                    <span> Life claim 41157</span>
-                                  </div>
-                                </td>
+                                  <td>
+                                    <div>
+                                      <span>  {{details.supervisor}} </span>
+                                    </div>
+                                  </td>
 
+                                  <td>
+                                    <div>
+                                      <span>  {{details.complexity}} </span>
+                                    </div>
+                                  </td>
 
-                                <td>
-                                  <div>
-                                    <span> Shakir shah </span>
-                                  </div>
-                                </td>
+                                  <td>
+                                    <div>
+                                      <span>  {{details.rating}} </span>
+                                    </div>
+                                  </td>
 
+                                  <td>
+                                    <div>
+                                      <span>  {{details.layout}} </span>
+                                    </div>
+                                  </td>
 
-                                <td>
-                                  <div>
-                                    <span> C4T3</span>
-                                  </div>
-                                </td>
-
-                                <td>
-                                  <div>
-                                    <span>NA </span>
-                                  </div>
-                                </td>
-
-                                <td>
-                                  <div>
-                                    <span> 0</span>
-                                  </div>
-                                </td>
-
-                                <td>
-                                  <div>
-                                    <span> On Training </span>
-                                  </div>
-                                </td>
+                                  <td>
+                                    <div>
+                                      <span>  {{details.payment}} </span>
+                                    </div>
+                                  </td>
+                                  
                                 </tr>
-<!--////////////////////////////////////////////////////-->
-
-                               
-<td>
-  <div>
-    <span> Jan-2024 </span>
-  </div>
-</td>
-
-
-<td>
-  <div>
-    <span> Life claim 41157</span>
-  </div>
-</td>
-
-
-<td>
-  <div>
-    <span> Shakir shah </span>
-  </div>
-</td>
-
-
-<td>
-  <div>
-    <span> C4T3</span>
-  </div>
-</td>
-
-<td>
-  <div>
-    <span>NA</span>
-  </div>
-</td>
-
-<td>
-  <div>
-    <span> 0</span>
-  </div>
-</td>
-
-<td>
-  <div>
-    <span> On Training </span>
-  </div>
-</td>
-
-
-
                              
                             </tbody>
                           </table>
