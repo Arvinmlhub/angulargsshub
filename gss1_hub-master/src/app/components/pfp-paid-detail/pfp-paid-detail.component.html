@@ -368,53 +368,15 @@
                               </tr>
                             </thead>
                             <tbody>
-
-                                  <tr  *ngFor="let details of viewDetailsGrid" class="table-layout-header">
-                                        
-                                  <td>
-                                    <div>
-                                      <span>  {{details.year}} </span>
-                                    </div>
-                                  </td>
-
-                                  <td>
-                                    <div>
-                                      <span>  {{details.process}} </span>
-                                    </div>
-                                  </td>
-
-                                  <td>
-                                    <div>
-                                      <span>  {{details.supervisor}} </span>
-                                    </div>
-                                  </td>
-
-                                  <td>
-                                    <div>
-                                      <span>  {{details.complexity}} </span>
-                                    </div>
-                                  </td>
-
-                                  <td>
-                                    <div>
-                                      <span>  {{details.rating}} </span>
-                                    </div>
-                                  </td>
-
-                                  <td>
-                                    <div>
-                                      <span>  {{details.layout}} </span>
-                                    </div>
-                                  </td>
-
-                                  <td>
-                                    <div>
-                                      <span>  {{details.payment}} </span>
-                                    </div>
-                                  </td>
-                                  
+                              <tr  *ngFor="let details of viewDetailsGrid" class="table-layout-header">
+                                  <td class="table-col-text">{{details.year}}</td>
+                                  <td class="table-col-text">{{details.process}}</td>
+                                  <td class="table-col-text">{{details.supervisor}}</td>
+                                  <td class="table-col-text">{{details.complexity}}</td>
+                                  <td class="table-col-text">{{details.rating}}</td>
+                                  <td class="table-col-text">{{details.layout}}</td>
+                                  <td class="table-col-text">{{details.payment}}</td>
                                 </tr>
-                             
                             </tbody>
                           </table>
                         </div>

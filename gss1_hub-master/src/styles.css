@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue",Helvetica,sans-serif;
     color: #333;
 }
 
@@ -26,6 +26,13 @@ body{
     flex-wrap: wrap;
 }
 /* styles.css */
-
+.icons{
+    color: #337ab7;
+}
+.icons-label{
+    padding-top: 8px;
+    padding-bottom : 0px;
+    font-family: 'Roboto';
+}
 
 

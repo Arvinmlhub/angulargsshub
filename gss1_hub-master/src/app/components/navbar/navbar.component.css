@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 12vh;
+    height: 8vh;
     margin-top: 5px;
     
 }
@@ -35,19 +35,19 @@
 }
 
 /* Centered section inside the top navigation */
-.topnav-centered a {
+/*.topnav-centered a {
     /* float: none;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); */
-}
+    transform: translate(-50%, -50%); 
+}*/
 
 .user {
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
-    background-color: rgb(32, 32, 65);
+    background-color: #337ab7;
     color: white;
     display: flex;
     cursor: pointer;
@@ -91,4 +91,16 @@ input {
         left: 0;
         transform: none;
     }
+}
+
+.searchtext {
+    float: right;
+    height: 25px;
+    color: #00609f !important;
+    font-size: 11px;
+    border-radius: 24px;
+    padding: 7px;
+    outline-offset: 1.5px;
+    background: #f4fbff;
+    border: 1px solid #a5c8dd;
 }

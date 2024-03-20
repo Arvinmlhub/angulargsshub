@@ -54,7 +54,7 @@ export interface LeftMenuItem {
   {
     icon: faLayerGroup,
     active: false,
-    label: 'QUALITY',
+    label: 'Quality',
   },
   {
     icon: faStar,

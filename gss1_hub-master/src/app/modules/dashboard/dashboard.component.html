@@ -1,37 +1,39 @@
 <div class="container main-panel">
-   <a style="height: 48px;width: 48px;border: 1px solid black;position: absolute;border-radius: 100%;
-   top: -25px;left:10%;transform: translateX(-50%);" routerLink="">
-   <img src="./../../../assets/home.png">
-</a>
+   <!-- <a style="height: 48px;width: 48px;border: 1px solid black;position: absolute;border-radius: 100%;
+   top: -25px;left:15%;transform: translateX(-50%);" routerLink=""> -->
+   <a class="home-icon" routerLink="">
+      <fa-icon [icon]="house" size="xl" class="icons" ></fa-icon>
+   <!-- <img src="./../../../assets/home.png"> -->
+   </a>
     
    <div class="left">
-    <div class="menu-item" (click)="handleClickLeft(menuItem)" *ngFor="let menuItem of leftMenu" style="color: black;">
-       <fa-icon [icon]="menuItem.icon" size="xl" ></fa-icon>
-       <p  >{{menuItem.label}}</p>
-    </div>
+      <div class="menu-item" (click)="handleClickLeft(menuItem)" *ngFor="let menuItem of leftMenu" style="color: black;">
+         <fa-icon [icon]="menuItem.icon" size="xl" class="icons" ></fa-icon>
+         <br>
+         <div class="icons-label" >{{menuItem.label}}</div>
+      </div>
    </div>
    <div class="center">
-         <div style="display: flex;flex-wrap: wrap;">
-        <div class="item"  (click)="handleClickCenter(menuItem)"  *ngFor="let menuItem of centerMenu" >
-           <fa-icon [icon]="menuItem.icon" size="xl" ></fa-icon>
+      <div style="display: flex;flex-wrap: wrap;">
+         <div class="item"  (click)="handleClickCenter(menuItem)"  *ngFor="let menuItem of centerMenu" >
+           <fa-icon [icon]="menuItem.icon" size="xl" class="icons" ></fa-icon>
            <p>{{menuItem.label}}</p>
-        </div>
-    </div>
+         </div>
+      </div>
    </div>
    <div class="right" style="width: 20px;">
       <div class="right-top" >
-         
-         <img src="./../../../assets/your_journey_img.png" height="40" width="100" />
+         <img src="./../../../assets/your_journey_img.png" style="height:55px;" />
       </div>
       <div class="right-bottom">
           <div *ngFor="let employ of upcomingWorkAnniversary" class="right-item" >
               <img src="./../../../assets/avatar.png" height="50" width="80" alt="img">
-              <h4>{{employ.firstName}} {{employ.lastName}}</h4>
-              <h6>Completing {{employ.years}} years.</h6>
+              <h4 class="user-name">{{employ.firstName}} {{employ.lastName}}</h4>
+              <h6 class="user-time">Completing {{employ.years}} years.</h6>
           </div>
-          <div class="view-more">
-            <p [routerLink]="['your-journey']" >View All</p>
-          </div>
-         </div>
+      </div>
+      <div class="view-more">
+         <a  [routerLink]="['your-journey']">View All</a>
+     </div>
    </div>
 </div>
