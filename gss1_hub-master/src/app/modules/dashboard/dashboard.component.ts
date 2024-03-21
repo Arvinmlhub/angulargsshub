@@ -8,6 +8,7 @@ import {
   faLayerGroup,
   faStar,
   faUserGroup,
+  faHouse
 } from '@fortawesome/free-solid-svg-icons';
 import { Employee } from 'src/app/interfaces/employee.interface';
 import { UpcomingWorkAnniversary } from 'src/app/utils/employee-constant';
@@ -24,6 +25,7 @@ export class DashboardComponent implements OnInit {
   handHoldingHeart = faHandHoldingHeart;
   star = faStar;
   desktop = faDesktop;
+  house = faHouse;
   centerMenu: CenterMenuItem[] =[];
   leftMenu: LeftMenuItem[] =[];
 
